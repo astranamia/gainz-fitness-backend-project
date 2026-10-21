@@ -1,0 +1,177 @@
+.navbar{
+    display: flex;
+    background-color: #001125;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+    z-index: 1000;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.logo{
+    margin-top: 5px;
+}
+
+.nav-list{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-buttons{
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.hero-section{
+    display: flex;
+    position: relative;
+    background-image: url('assets/hero-image.png');
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #001125;
+    color: white;
+    text-align: center;
+}
+
+.gym-rates-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #001125;
+}
+
+.gym-rates-section h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.gym-rates-section p{
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.gym-rates-section p, h2, h3, h4, h5, h6, ul, li, a{
+    color: white;
+}
+
+.gym-rates-cards{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gym-rate-card{
+    background-color: #001125;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.gym-rate-card h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.trainers-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #001125;
+}
+
+.trainers-section h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+    padding-right: 780px;
+}
+
+.trainers-section p{
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.trainer-hero-image{
+    display: flow-root;
+    width: 100%;
+}
+
+.trainer-hero-image img{
+    float: left;
+    margin-right: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.connect-section h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+    padding-right: 780px;
+}
+
+.connect-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #001125;
+}
+
+.connect-section h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.connect-section p{
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #000000;
+}
+
+.footer p{
+    font-size: 14px;
+    margin: 0;
+    color: white;
+}
