@@ -1,0 +1,333 @@
+:root {
+  /* Colors */
+  --bg-dark: #0a0a0c;
+  --bg-card: #2D2D2F;
+  --bg-card-hover: #38383a;
+  --text-main: #ffffff;
+  --text-muted: #a0a5b5;
+  --accent-light: #e5e5e5;
+  
+  /* Fonts */
+  --font-navbar: 'Malgun Gothic', 'Dotum', 'Apple SD Gothic Neo', sans-serif;
+  --font-logo: 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+  --font-hero-title: 'Outfit', sans-serif;
+  --font-hero-desc: 'M PLUS 1', sans-serif;
+  --font-btn-member: 'Oswald', sans-serif;
+  --font-transformation: 'Outfit', sans-serif;
+  --font-section-titles: 'Orbitron', sans-serif;
+  --font-body-descriptions: 'Montserrat', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  
+  /* Transitions */
+  --transition-fast: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --transition-smooth: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: var(--font-body-descriptions);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+p, span, li, div, button {
+  font-family: var(--font-body-descriptions);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Site Layout Container */
+.site-container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text-stroke {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+}
+
+.text-center-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.centered-desc {
+  max-width: 600px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+/* Animation */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.animate-on-scroll.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger Animation Delays */
+.delay-1 { transition-delay: 0.15s; }
+.delay-2 { transition-delay: 0.3s; }
+.delay-3 { transition-delay: 0.45s; }
+
+
+/* Nav Side Drawer */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(10, 10, 12, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: var(--transition-smooth);
+}
+
+.site-header.scrolled {
+  background: rgba(10, 10, 12, 0.95);
+  padding-top: 5px;
+  /* padding-bottom: 5px; */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 18px 20px;
+}
+
+.site-brand {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-logo);
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.logo-icon {
+  font-family: var(--font-logo);
+  margin-right: 8px;
+}
+
+.logo-text {
+  font-family: var(--font-logo);
+}
+
+/* Hamburger Toggle Button */
+.hamburger-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Nav Drawer Container */
+.nav-drawer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links-list {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin-bottom: 10px;
+  /* margin-top: 0; */
+}
+
+.nav-link {
+  font-family: var(--font-navbar) !important;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  padding: 8px 16px;
+  margin-top: 12px;
+  transition: var(--transition-fast);
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--text-main);
+}
+
+.drawer-header {
+  display: none;
+}
+
+.btn-admin {
+  font-family: var(--font-navbar) !important;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #333;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 8px 20px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  transition: var(--transition-fast);
+  display: inline-block;
+}
+
+.btn-admin:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.nav-overlay {
+  display: none;
+}
+
+.signup-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #000000;
+}
+
+.signup-container h1{
+    font-size: 36px;
+}
+
+.signup-container h1, h2, h3, h4, h5, h6, label, p{
+    color: white;
+}
+
+.sign-up-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.sign-up-card{
+    background-color: #001125;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+}
+
+.sign-up-card.active{
+    display: flex;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-navigation:not(:has(.prev-btn)) {
+  justify-content: flex-end;
+}
+
+.prev-btn, .next-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.personal-form-group{
+    display: grid;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.personal-form-group label{
+    margin-bottom: 5px;
+}
+
+.personal-form-group input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.personal-form-group select{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-inline-group{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-inline-group select{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: #0e8800;
+    color: white;
+}
+
+.sign-up-button{
+    padding: 10px 20px;
+    background-color: #0e8800;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    max-width: 200px;
+    display: block;
+    align-self: center;
+}

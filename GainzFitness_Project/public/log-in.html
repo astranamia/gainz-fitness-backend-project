@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>GainzFitness - Log In</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=M+PLUS+1:wght@400;500&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Orbitron:wght@800;900&family=Oswald:wght@700&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="login.css">
+    </head>
+    <body>
+        <div class="login-area">
+            <a href="index.html" class="logo-link"><div class="login-form"><i class="fa-solid fa-circle-arrow-left fa-2x"></i></a>
+                <h1>Log In</h1>
+                <form action="login.php" method="POST">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <i class="fa fa-user"></i>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <i class="fa fa-lock"></i>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="login-button">LOG IN</button>
+                </form>
+                <p>Don't have an account? <a href="sign-up.html">Sign Up</a></p>
+                <p>Are you an administrator? <a href="admin-login.html">Admin Log In</a></p>
+            </div>
+        </div>
+    </body>
+</html>
