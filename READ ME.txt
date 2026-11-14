@@ -1,0 +1,11 @@
+Big GainzFitness
+ACCOUNTS 
+[READ OR YOU WONT BE ABLE TO ACCESS THE PORTALS FOR CLIENT AND ADMIN, MAKE SURE YOU HAVE IMPORTED THE PROVIDED DATABASE BEFOREHAND]
+
+Client:
+Email - juandelacruz@gmail.com
+Password - ayasib
+
+Admin:
+Email - cristoibarra@gmail.com
+Password - mariaclara
