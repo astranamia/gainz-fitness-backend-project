@@ -1,0 +1,226 @@
+    body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: var(--font-body-descriptions);
+    overflow-x: hidden;
+    }
+
+    .login-page {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    }
+
+    .left-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 60px;
+    background-color: var(--bg-dark);
+    z-index: 2;
+    max-width: 650px;
+    min-height: 100vh;
+    }
+
+    .form-wrapper {
+    max-width: 440px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .brand-logo {
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+    }
+
+    .top-text {
+    margin-bottom: 24px;
+    }
+
+    .page-title {
+    font-family: var(--font-hero-title) !important;
+    font-weight: 800 !important;
+    font-size: 2.4rem;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    }
+
+    .page-sub {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    }
+
+    .user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    }
+
+    .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    }
+
+    .field-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #d1d5db;
+    }
+
+    .input-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    }
+
+    .field-icon {
+    position: absolute;
+    left: 18px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    }
+
+    .hide-icon {
+    position: absolute;
+    right: 18px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    cursor: pointer;
+    }
+
+    .user-input {
+    width: 100%;
+    background-color: #161619;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    padding: 14px 20px 14px 48px;
+    color: #fff;
+    font-size: 0.9rem;
+    font-family: var(--font-body-descriptions);
+    transition: var(--transition-fast);
+    }
+
+    .user-input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.4);
+    background-color: #1c1c20;
+    }
+
+    .user-input::placeholder {
+    color: #555;
+    }
+
+    .extra-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -2px;
+    }
+
+    .forgot-btn, .forgot-link {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    transition: var(--transition-fast);
+    }
+
+    .forgot-btn:hover, .forgot-link:hover {
+    color: #fff;
+    text-decoration: underline;
+    }
+
+    .submit-btn {
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 50px;
+    padding: 14px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    }
+
+    .submit-btn:hover {
+    background-color: #e5e5e5;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+    }
+
+    .bottom-box {
+    margin-top: 30px;
+    }
+
+    .change-page {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 15px;
+    }
+
+    .link-btn {
+    color: #fff;
+    font-weight: 600;
+    margin-left: 4px;
+    }
+
+    .link-btn:hover {
+    text-decoration: underline;
+    }
+
+    .copy-text {
+    /* text-align: center; */
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: 100px;
+    }
+
+    .right-box {
+    flex: 1;
+    position: relative;
+    background: url('assets/loginbg.png') center/cover no-repeat;
+    min-height: 100vh;
+    }
+
+    .bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, rgba(10, 10, 12, 0.1) 0%, rgba(10, 10, 12, 0.95) 100%);
+    }
+
+    @media (max-width: 992px) {
+    .login-page {
+        flex-direction: column;
+    }
+    
+    .left-box {
+        max-width: 100%;
+        padding: 30px 20px;
+        min-height: 100vh;
+    }
+
+    .right-box {
+        display: none;
+    }
+
+    .copy-text {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: 100px;
+    }
+    }

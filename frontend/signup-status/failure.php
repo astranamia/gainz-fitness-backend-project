@@ -1,0 +1,29 @@
+<?php
+
+?>
+
+<html>
+    <head>
+        <title>GainzFitness - Signup Failed</title>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=M+PLUS+1:wght@400;500&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Orbitron:wght@800;900&family=Oswald:wght@700&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    </head>
+    <body>
+        <div class="signup-failed-container">
+            <div class="signup-failed-content">
+                <div class="failure-icon">
+                    <i class="fas fa-times-circle"></i>
+                </div>
+                <h1>Signup Failed</h1>
+                <p>Sorry, something went wrong with your signup. Please try again.</p>
+                <button class="home-button" onclick="window.location.href='../index.php'">Return to Homepage</button>
+            </div>
+        </div>
+    </body>
+</html>
